@@ -1,0 +1,71 @@
+
+:root {
+  // Fonts
+  --montserrat: 'Montserrat';
+  --roboto: 'Roboto';
+
+  // Colors
+  --mainColor: #002F6C;
+  --secondaryColor: #F0AD4E;
+  --bgColor: #FAF9F8;
+  --grayColor: #9299BA;
+  --greenColor: #41a05c;
+
+}
+
+// Global
+* {
+  box-sizing: border-box; 
+  font-size: 62.5%; /* Now 10px = 1rem! */ 
+}
+
+body {
+  background-color: var(--bgColor); 
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--mainColor);
+  font-family: var(--montserrat);
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p, a, li {
+  color: black;
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+// Add ins

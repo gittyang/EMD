@@ -1,0 +1,50 @@
+
+@import 'config';
+@import 'utilities';
+@import 'navbar';
+
+
+.hero {
+  // border: 2px solid pink;
+  height: 90vh;
+  background-image: url('/build/img/hero-bg.jpg');
+  background-size: cover;
+  // background-attachment: fied;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+
+  .hero-container {
+    // border: 2px solid blue;
+    text-align: center;
+
+    .hero-content {
+      // border: 2px solid red;
+
+      h1 {
+        font-size: 5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        #hero-span { 
+          color: var(--secondaryColor);
+          font-size: 5rem;
+          font-weight: 600;
+        }
+      }
+  
+    }
+
+    // .hero-button {
+    //   border: 2px solid green;
+    // }
+  }
+
+
+
+
+}
+

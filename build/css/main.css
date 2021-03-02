@@ -1,0 +1,129 @@
+:root {
+  --montserrat: 'Montserrat';
+  --roboto: 'Roboto';
+  --mainColor: #002F6C;
+  --secondaryColor: #F0AD4E;
+  --bgColor: #FAF9F8;
+  --grayColor: #9299BA;
+  --greenColor: #41a05c; }
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* Now 10px = 1rem! */ }
+
+body {
+  background-color: var(--bgColor);
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  color: var(--mainColor);
+  font-family: var(--montserrat);
+  font-weight: 500; }
+
+h1 {
+  font-size: 2.7rem; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 2.1rem; }
+
+h4 {
+  font-size: 1.8rem; }
+
+p, a, li {
+  color: black;
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  max-width: 120rem;
+  /* 1200px */ }
+
+.button {
+  text-align: center;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-family: var(--roboto); }
+
+.buttonOrangeBorder {
+  background-color: var(--bgColor);
+  border: 2px solid var(--secondaryColor);
+  color: var(--mainColor);
+  transition: all .1s ease-in-out; }
+  .buttonOrangeBorder:hover {
+    cursor: pointer;
+    background-color: var(--secondaryColor); }
+
+.buttonSolid {
+  background-color: var(--secondaryColor);
+  border: none; }
+  .buttonSolid:hover {
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    background-color: var(--secondaryColor); }
+
+.navbar {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto; }
+  .navbar .nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: auto; }
+    .navbar .nav-container .nav-title a img {
+      height: 100px;
+      width: 100px; }
+    .navbar .nav-container .nav-links .nav-ul {
+      display: flex;
+      height: 100%; }
+      .navbar .nav-container .nav-links .nav-ul .nav-li {
+        border-right: 1px solid var(--grayColor); }
+        .navbar .nav-container .nav-links .nav-ul .nav-li:first-child {
+          border-left: 1px solid var(--grayColor); }
+        .navbar .nav-container .nav-links .nav-ul .nav-li .nav-item {
+          padding: 4rem 2rem;
+          font-size: 2rem;
+          display: block;
+          font-weight: 500;
+          font-family: var(--montserrat);
+          height: 100%;
+          transition: all .1s ease-in-out; }
+          .navbar .nav-container .nav-links .nav-ul .nav-li .nav-item:hover {
+            cursor: pointer;
+            background-color: var(--secondaryColor); }
+
+.hero {
+  height: 90vh;
+  background-image: url("/build/img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero .hero-container {
+    text-align: center; }
+    .hero .hero-container .hero-content h1 {
+      font-size: 5rem;
+      font-weight: 600;
+      text-transform: uppercase; }
+      .hero .hero-container .hero-content h1 #hero-span {
+        color: var(--secondaryColor);
+        font-size: 5rem;
+        font-weight: 600; }

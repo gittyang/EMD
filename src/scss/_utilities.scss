@@ -1,0 +1,41 @@
+
+
+.container {
+  max-width: 120rem; /* 1200px */
+}
+
+@mixin ease() {
+  transition: all .1s ease-in-out;
+}
+
+.button {
+  text-align: center;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-family: var(--roboto);
+}
+
+.buttonOrangeBorder {
+  background-color: var(--bgColor);
+  border: 2px solid var(--secondaryColor);
+  color: var(--mainColor);
+  @include ease();
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--secondaryColor);
+  }
+}
+
+.buttonSolid {
+  background-color: var(--secondaryColor);
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    @include ease(); 
+    background-color: var(--secondaryColor);
+  }
+}
+
