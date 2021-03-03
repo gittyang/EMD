@@ -49,7 +49,7 @@ h4 {
 h5 {
   font-size: 1.7rem; }
 
-p, a, li {
+p, a, li, label, input, textarea {
   color: black;
   font-family: var(--openSans);
   font-size: 1.5rem;
@@ -347,14 +347,62 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
-    background: rgba(17, 17, 17, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     height: 100%;
     width: 100%; }
   .call-to-action .cta-container {
     z-index: 1; }
-    .call-to-action .cta-container .cta-heading h3 {
-      color: var(--bgColor); }
+    .call-to-action .cta-container .cta-heading h4 {
+      color: var(--bgColor);
+      font-size: 2.1rem; }
     .call-to-action .cta-container .cta-content {
       margin: 2rem 0 3rem 0; }
       .call-to-action .cta-container .cta-content h2 {
-        color: var(--bgColor); }
+        color: var(--bgColor);
+        font-size: 3.6rem; }
+
+footer {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer .footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+    padding-bottom: 4rem; }
+    footer .footer-container .footer-header img {
+      height: 100px;
+      width: 100px; }
+    footer .footer-container .footer-header .footer-header-content {
+      margin: 1rem 0 2rem 0; }
+    footer .footer-container .footer-header .footer-header-icons {
+      margin-top: 1rem;
+      display: flex; }
+      footer .footer-container .footer-header .footer-header-icons i {
+        font-size: 3rem;
+        margin-right: 2rem;
+        transition: all .1s ease-in-out; }
+        footer .footer-container .footer-header .footer-header-icons i:hover {
+          cursor: pointer;
+          color: var(--secondaryColor); }
+    footer .footer-container .footer-contact-form .contact-form-head {
+      border-bottom: 2px solid var(--mainColor); }
+    footer .footer-container .footer-contact-form .contact-form-item {
+      padding: 1rem 0; }
+      footer .footer-container .footer-contact-form .contact-form-item .input-group input, footer .footer-container .footer-contact-form .contact-form-item .input-group textarea {
+        padding: .5rem;
+        width: 100%; }
+    footer .footer-container .footer-contact-info .contact-info-head {
+      border-bottom: 2px solid var(--mainColor); }
+    footer .footer-container .footer-contact-info .contact-info-content h5 {
+      margin: 1rem 0; }
+  footer .footer-copyright {
+    border-top: 2px solid var(--grayColor);
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

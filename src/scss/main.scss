@@ -361,7 +361,7 @@
     position: absolute; 
     top: 0;
     right: 0;
-    background: rgba($color: #111, $alpha: .9); 
+    background: rgba($color: black, $alpha: .85); 
     height: 100%;
     width: 100%;
   } 
@@ -371,8 +371,9 @@
 
     .cta-heading {
 
-      h3 {
+      h4 {
         color: var(--bgColor);
+        font-size: 2.1rem;
       }
     }
 
@@ -381,9 +382,97 @@
 
       h2 {
         color: var(--bgColor);
+        font-size: 3.6rem;
       }
     }
   }
 } // End of Call to Action Section
 
 
+// Footer
+
+footer {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+    padding-bottom: 4rem;
+
+    .footer-header {
+
+      img {
+        height: 100px;
+        width: 100px;
+      }
+
+      .footer-header-content {
+        margin: 1rem 0 2rem 0;
+      }
+
+      .footer-header-icons {
+        margin-top: 1rem;
+        display: flex;
+
+        i {
+          font-size: 3rem;
+          margin-right: 2rem;
+          @include ease();
+
+          &:hover {
+            cursor: pointer;
+            color: var(--secondaryColor);
+          }
+        }
+      }
+    }
+
+    .footer-contact-form {
+
+      .contact-form-head {
+        border-bottom: 2px solid var(--mainColor);
+      }
+
+      .contact-form-item {
+        padding: 1rem 0;
+
+        .input-group {
+
+          input, textarea {
+            padding: .5rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .footer-contact-info {
+
+      .contact-info-head {
+        border-bottom: 2px solid var(--mainColor);
+      }
+
+      .contact-info-content {
+        
+        h5 {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    border-top: 2px solid var(--grayColor);
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+} // End of Footer
