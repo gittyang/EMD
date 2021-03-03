@@ -280,3 +280,28 @@ ul {
             font-size: 1.3rem; }
     .team .team-container .team-button {
       margin-top: 8rem; }
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0; }
+  .clients .clients-container {
+    text-align: center; }
+    .clients .clients-container #clients-underline {
+      border: 1px solid black;
+      width: 5rem;
+      margin: auto;
+      margin-top: 4rem;
+      margin-bottom: 5rem; }
+    .clients .clients-container .clients-lists {
+      margin: 5rem 0; }
+      .clients .clients-container .clients-lists .clients-item-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        grid-gap: 5rem; }
+        .clients .clients-container .clients-lists .clients-item-list li {
+          filter: grayscale(1); }
+          .clients .clients-container .clients-lists .clients-item-list li img {
+            width: 100%;
+            height: 100%; }
