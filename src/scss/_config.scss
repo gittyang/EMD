@@ -2,12 +2,12 @@
 :root {
   // Fonts
   --montserrat: 'Montserrat';
-  --roboto: 'Roboto';
+  --openSans: 'Open Sans';
 
   // Colors
   --mainColor: #002F6C;
   --secondaryColor: #F0AD4E;
-  --bgColor: #FAF9F8;
+  --bgColor: #f3f0ed;
   --grayColor: #9299BA;
   --greenColor: #3a9453;
 
@@ -21,15 +21,21 @@
 
 body {
   background-color: var(--bgColor); 
-  font-family: var(--roboto);
+  font-family: var(--openSans);
   padding: 0;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
   color: black;
   font-family: var(--montserrat);
   font-weight: 500;
+  margin: 0;
+}
+h3, h4, h5 {
+  color: black;
+  font-family: var(--openSans);
+  font-weight: 400;
   margin: 0;
 }
 
@@ -40,6 +46,7 @@ h1 {
 h2 {
   font-size: 4rem;
   line-height: 4.5rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -47,12 +54,16 @@ h3 {
 }
 
 h4 {
+  font-size: 2rem;
+}
+
+h5 {
   font-size: 1.7rem;
 }
 
 p, a, li {
   color: black;
-  font-family: var(--roboto);
+  font-family: var(--openSans);
   font-size: 1.5rem;
   font-weight: 300;
   margin: 0;

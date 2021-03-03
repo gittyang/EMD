@@ -62,7 +62,7 @@
     .cta-content {
       margin: 2.5rem 0 3rem 0;
   
-      h4 {
+      h5 {
         font-weight: 400;
       }
     }
@@ -77,3 +77,85 @@
     }
   }
 } // End of Call to Action Section
+
+
+// Services Section
+
+.services {
+
+  .services-top-container {
+    background-image: url('/build/img/service.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    box-shadow: 0px 3px 5px black;
+
+    &:after { 
+      content: '';
+      position: absolute; 
+      top: 0;
+      right: 0;
+      background: rgba($color: #111, $alpha: .9); 
+      height: 100%;
+      width: 100%;
+    }
+
+    .services-top-wrapper {
+      z-index: 2;
+      width: 80rem;
+
+      .services-title {
+  
+        h2 {
+          color: var(--bgColor);
+          font-weight: 600;
+        }
+  
+        h4 {
+          color: var(--bgColor);
+        }
+      }
+  
+      .services-content {
+        margin-top: 3rem;
+  
+        p {
+          color: var(--bgColor);
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .services-bottom-container {
+    text-align: center;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .services-bottom-wrapper {
+
+      .services-items {
+  
+        .item-lists {
+  
+          li {
+  
+            p {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

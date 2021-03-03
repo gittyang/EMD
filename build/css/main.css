@@ -1,9 +1,9 @@
 :root {
   --montserrat: 'Montserrat';
-  --roboto: 'Roboto';
+  --openSans: 'Open Sans';
   --mainColor: #002F6C;
   --secondaryColor: #F0AD4E;
-  --bgColor: #FAF9F8;
+  --bgColor: #f3f0ed;
   --grayColor: #9299BA;
   --greenColor: #3a9453; }
 
@@ -14,14 +14,20 @@
 
 body {
   background-color: var(--bgColor);
-  font-family: var(--roboto);
+  font-family: var(--openSans);
   padding: 0;
   margin: 0; }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
   color: black;
   font-family: var(--montserrat);
   font-weight: 500;
+  margin: 0; }
+
+h3, h4, h5 {
+  color: black;
+  font-family: var(--openSans);
+  font-weight: 400;
   margin: 0; }
 
 h1 {
@@ -29,17 +35,21 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  line-height: 4.5rem; }
+  line-height: 4.5rem;
+  margin-bottom: 2rem; }
 
 h3 {
   font-size: 2.5rem; }
 
 h4 {
+  font-size: 2rem; }
+
+h5 {
   font-size: 1.7rem; }
 
 p, a, li {
   color: black;
-  font-family: var(--roboto);
+  font-family: var(--openSans);
   font-size: 1.5rem;
   font-weight: 300;
   margin: 0; }
@@ -144,10 +154,53 @@ ul {
     font-weight: 600; }
   .call-to-action .cta-container .cta-content {
     margin: 2.5rem 0 3rem 0; }
-    .call-to-action .cta-container .cta-content h4 {
+    .call-to-action .cta-container .cta-content h5 {
       font-weight: 400; }
   .call-to-action .cta-container .cta-button {
     display: flex;
     align-items: center; }
     .call-to-action .cta-container .cta-button h4 {
       margin-right: 1rem; }
+
+.services .services-top-container {
+  background-image: url("/build/img/service.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 3px 5px black; }
+  .services .services-top-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(17, 17, 17, 0.9);
+    height: 100%;
+    width: 100%; }
+  .services .services-top-container .services-top-wrapper {
+    z-index: 2;
+    width: 80rem; }
+    .services .services-top-container .services-top-wrapper .services-title h2 {
+      color: var(--bgColor);
+      font-weight: 600; }
+    .services .services-top-container .services-top-wrapper .services-title h4 {
+      color: var(--bgColor); }
+    .services .services-top-container .services-top-wrapper .services-content {
+      margin-top: 3rem; }
+      .services .services-top-container .services-top-wrapper .services-content p {
+        color: var(--bgColor);
+        font-weight: 400; }
+
+.services .services-bottom-container {
+  text-align: center;
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .services .services-bottom-container .services-bottom-wrapper .services-items .item-lists li p {
+    color: black; }
