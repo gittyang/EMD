@@ -297,3 +297,46 @@
   }
 } // End of Clients Section
 
+
+// Impact Section
+
+.impact {
+  background-color: var(--mainColor);
+  padding: 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  .impact-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+
+    .impact-items {
+
+      .impact-item-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 3rem;
+          margin-right: 2rem;
+          color: var(--bgColor);
+        }
+
+        h1 {
+          color: var(--bgColor);
+        }
+      }
+
+      .impact-item-bottom {
+
+        p {
+          color: var(--bgColor);
+        }
+      }
+    }
+  }
+} // End of Impact Section
