@@ -25,10 +25,11 @@
   &:hover {
     cursor: pointer;
     background-color: var(--secondaryColor);
+    color: var(--bgColor);
   }
 }
 
-.buttonSolid {
+.buttonOrangeSolid {
   background-color: var(--secondaryColor);
   border: none;
   @include ease(); 
@@ -36,6 +37,21 @@
   &:hover {
     cursor: pointer;
     background-color: var(--grayColor);
+  }
+}
+
+.buttonBlueSolid {
+  border: 2px solid var(--mainColor);
+  background-color: var(--mainColor);
+  color: var(--bgColor);
+  // border: none;
+  @include ease(); 
+
+  &:hover {
+    cursor: pointer;
+    // border: 5px solid var(--mainColor);
+    background-color: var(--bgColor);
+    color: var(--mainColor);
   }
 }
 
