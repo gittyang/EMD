@@ -340,3 +340,50 @@
     }
   }
 } // End of Impact Section
+
+
+// Call to Action Section
+
+.call-to-action {
+  height: 90vh;
+  background-image: url('/build/img/collaborate.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    right: 0;
+    background: rgba($color: #111, $alpha: .9); 
+    height: 100%;
+    width: 100%;
+  } 
+
+  .cta-container {
+    z-index: 1;
+
+    .cta-heading {
+
+      h3 {
+        color: var(--bgColor);
+      }
+    }
+
+    .cta-content {
+      margin: 2rem 0 3rem 0;
+
+      h2 {
+        color: var(--bgColor);
+      }
+    }
+  }
+} // End of Call to Action Section
+
+
