@@ -10,7 +10,7 @@
 
 .button {
   text-align: center;
-  border-radius: .5rem;
+  // border-radius: .5rem;
   padding: 1rem 2rem;
   font-size: 2rem;
   font-family: var(--roboto);
@@ -18,8 +18,8 @@
 
 .buttonOrangeBorder {
   background-color: var(--bgColor);
-  border: 2px solid var(--secondaryColor);
-  color: var(--mainColor);
+  border: 3px solid var(--secondaryColor);
+  // color: var(--mainColor);
   @include ease();
 
   &:hover {
@@ -31,11 +31,11 @@
 .buttonSolid {
   background-color: var(--secondaryColor);
   border: none;
+  @include ease(); 
 
   &:hover {
     cursor: pointer;
-    @include ease(); 
-    background-color: var(--secondaryColor);
+    background-color: var(--grayColor);
   }
 }
 
