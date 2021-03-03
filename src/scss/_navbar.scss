@@ -33,7 +33,6 @@
 
     .nav-links {
       // border: 2px solid blue;
-      // margin: auto 0;
       
       .nav-ul {
         // border: 2px solid brown;
@@ -52,12 +51,10 @@
             // border: 2px solid green;
             padding: 4rem 2rem;
             font-size: 2rem; 
-            // border-radius: 2px;
             display: block;
             font-weight: 500;
             font-family: var(--montserrat);
             height: 100%;
-            // color: #333333; 
             @include ease(); 
           
             &:hover {

@@ -83,14 +83,6 @@ ul {
     background-color: var(--secondaryColor);
     color: var(--bgColor); }
 
-.buttonOrangeSolid {
-  background-color: var(--secondaryColor);
-  border: none;
-  transition: all .1s ease-in-out; }
-  .buttonOrangeSolid:hover {
-    cursor: pointer;
-    background-color: var(--grayColor); }
-
 .buttonBlueSolid {
   border: 2px solid var(--mainColor);
   background-color: var(--mainColor);
@@ -100,6 +92,16 @@ ul {
     cursor: pointer;
     background-color: var(--bgColor);
     color: var(--mainColor); }
+
+.buttonWhiteBorder {
+  background-color: var(--mainColor);
+  color: var(--bgColor);
+  border: 2px solid var(--bgColor);
+  transition: all .1s ease-in-out; }
+  .buttonWhiteBorder:hover {
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: var(--blackColor); }
 
 .navbar {
   background-color: var(--bgColor);
@@ -155,28 +157,27 @@ ul {
           font-size: 5rem;
           font-weight: 600; }
 
-.call-to-action {
-  padding: 6rem;
+.consultation {
+  padding: 8rem;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .call-to-action .cta-container .cta-title #cta-span {
+  .consultation .consult-container .consult-title #consult-span {
     text-transform: uppercase;
     font-size: 4rem;
     color: var(--greenColor);
     font-weight: 600; }
-  .call-to-action .cta-container .cta-content {
+  .consultation .consult-container .consult-content {
     margin: 2.5rem 0 3rem 0; }
-    .call-to-action .cta-container .cta-content h5 {
+    .consultation .consult-container .consult-content h5 {
       font-weight: 400; }
-  .call-to-action .cta-container .cta-button {
+  .consultation .consult-container .consult-button {
     display: flex;
     align-items: center; }
-    .call-to-action .cta-container .cta-button i {
+    .consultation .consult-container .consult-button i {
       margin-left: 1rem; }
 
 .services {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -216,7 +217,7 @@ ul {
       .services .services-top-container .services-top-wrapper .services-button {
         margin-top: 3rem; }
   .services .services-bottom-container {
-    margin: 8rem 0;
+    margin: 10rem 0;
     width: 100%;
     height: 100%; }
     .services .services-bottom-container .services-bottom-wrapper .services-items .item-lists {
@@ -231,3 +232,51 @@ ul {
           margin-top: .5rem; }
         .services .services-bottom-container .services-bottom-wrapper .services-items .item-lists li p {
           color: black; }
+
+.team {
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0; }
+  .team .team-container {
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .team .team-container .team-heading h2 {
+      color: var(--bgColor); }
+    .team .team-container #team-heading-underline {
+      border: 1px solid var(--bgColor);
+      width: 5rem;
+      margin: auto;
+      margin-bottom: 5rem; }
+    .team .team-container .team-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 5rem; }
+      .team .team-container .team-list .team-img-wrapper {
+        filter: grayscale(1);
+        transition: all .1s ease-in-out;
+        position: relative; }
+        .team .team-container .team-list .team-img-wrapper:hover {
+          filter: grayscale(0); }
+        .team .team-container .team-list .team-img-wrapper img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .team .team-container .team-list .team-img-wrapper .team-item-content {
+          background: var(--secondaryColor);
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          padding: .5rem; }
+          .team .team-container .team-list .team-img-wrapper .team-item-content h4 {
+            font-weight: 600;
+            font-family: 'Montserrat'; }
+          .team .team-container .team-list .team-img-wrapper .team-item-content p {
+            font-size: 1.3rem; }
+    .team .team-container .team-button {
+      margin-top: 8rem; }
