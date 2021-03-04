@@ -141,7 +141,7 @@ ul {
 
 .hero {
   height: 90vh;
-  background-image: url("img/hero-bg.jpg");
+  background-image: url("/img/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -184,7 +184,7 @@ ul {
   flex-direction: column;
   align-items: center; }
   .services .services-top-container {
-    background-image: url("img/service.jpg");
+    background-image: url("/img/service.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -334,7 +334,7 @@ ul {
 
 .call-to-action {
   height: 90vh;
-  background-image: url("img/collaborate.png");
+  background-image: url("/img/collaborate.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
