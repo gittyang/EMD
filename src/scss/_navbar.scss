@@ -2,47 +2,53 @@
 // Navigation
 
 .navbar {
-  // border: 2px solid red;
   background-color: var(--bgColor);
-  // background: rgba($color: #111, $alpha: .2); 
   border-bottom: 1px solid var(--grayColor);
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   text-align: center;
-  margin: auto;
+  // margin: 1rem;
+  padding: 0 1rem;
 
   .nav-container {
-    // border: 2px solid blue;
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    // height: 100%;
     margin: auto;
     
 
     .nav-title {
-      // border: 2px solid green;
+      padding-top: .5rem;
 
       a {
         
         img {
           height: 100px;
           width: 100px;
+
+          @media screen and (max-width: 992px) {
+
+            height: 80px;
+            width: 80px;
+          }
+
+          @media screen and (max-width: 768px) {
+
+          }
         }
       }
     }
 
     .nav-links {
-      // border: 2px solid blue;
       
       .nav-ul {
-        // border: 2px solid brown;
         display: flex;
         height: 100%;
 
         .nav-li {
-          // border: 2px solid blue;
+          // height: 100%;
           border-right: 1px solid var(--grayColor);
 
           &:first-child {
@@ -50,13 +56,14 @@
           }
 
           .nav-item {
-            // border: 2px solid green;
-            padding: 4rem 2rem;
+            padding: 0rem 2rem;
             font-size: 2rem; 
-            display: block;
             font-weight: 500;
             font-family: var(--montserrat);
             height: 100%;
+
+            display: flex;
+            align-items: center;
             @include ease(); 
           
             &:hover {
@@ -64,8 +71,36 @@
               background-color: var(--secondaryColor);
             }
           }
+
+          @media screen and (max-width: 992px) {
+              
+            .nav-item {
+
+              font-size: 1.8rem; 
+              padding: 0rem 1.5rem;
+            }
+          }
+
+          @media screen and (max-width: 768px) {
+
+            .nav-item {
+
+              font-size: 1.6rem; 
+              padding: 0rem 1rem;
+            }
+          }
+
+          @media screen and (max-width: 576px) {
+
+            display: none;
+          }
         }
       }
+    }
+
+    @media screen and (max-width: 576px) {
+
+      justify-content: center;
     }
   }
 }
