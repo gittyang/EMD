@@ -33,6 +33,108 @@
       }
     }
   }
+
+  @media screen and (max-width: 992px)  {
+
+    .hero-container {
+  
+      .hero-content {
+  
+        h1 {
+          font-size: 4rem;
+
+          #hero-span { 
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px)  {
+
+    .hero-container {
+  
+      .hero-content {
+  
+        h1 {
+          font-size: 3.5rem;
+
+          #hero-span { 
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px)  {
+
+    .hero-container {
+  
+      .hero-content {
+  
+        h1 {
+          font-size: 3rem;
+
+          #hero-span { 
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px)  {
+
+    .hero-container {
+  
+      .hero-content {
+  
+        h1 {
+          font-size: 2.5rem;
+
+          #hero-span { 
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 414px)  {
+
+    .hero-container {
+  
+      .hero-content {
+  
+        h1 {
+          font-size: 2.2rem;
+
+          #hero-span { 
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px)  {
+
+    .hero-container {
+  
+      .hero-content {
+  
+        h1 {
+          font-size: 2rem;
+
+          #hero-span { 
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
 } // End of Hero Section
 
 
