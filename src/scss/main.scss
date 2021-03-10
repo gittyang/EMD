@@ -714,6 +714,21 @@
       }
     }
   }
+
+  @media (max-width: 1400px) {
+
+    padding: 6rem;
+  }
+
+  @media (max-width: 1200px) {
+
+    padding: 5rem;
+  }
+
+  @media (max-width: 992px) {
+
+    padding: 4rem;
+  }
 } // End of Impact Section
 
 
@@ -728,6 +743,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6rem;
 
   position: relative;
 
@@ -753,11 +769,134 @@
     }
 
     .cta-content {
-      margin: 2rem 0 3rem 0;
+      margin: 1.5rem 0 3rem 0;
 
       h2 {
         color: var(--bgColor);
         font-size: 3.6rem;
+        line-height: 4rem;
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+
+    .cta-container {
+  
+      .cta-heading {
+  
+        h4 {
+          font-size: 1.9rem;
+        }
+      }
+  
+      .cta-content {
+  
+        h2 {
+          font-size: 3.2rem;
+          line-height: 3.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    .cta-container {
+  
+      .cta-heading {
+  
+        h4 {
+          font-size: 1.7rem;
+        }
+      }
+  
+      .cta-content {
+  
+        h2 {
+          font-size: 2.6rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 4rem;
+
+    .cta-container {
+  
+      .cta-heading {
+  
+        h4 {
+          font-size: 1.5rem;
+        }
+      }
+  
+      .cta-content {
+  
+        h2 {
+          font-size: 2.1rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+
+    .cta-container {
+  
+      .cta-heading {
+  
+        h4 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 1rem;
+
+    .cta-container {
+  
+      .cta-heading {
+  
+        h4 {
+          font-size: 1.2rem;
+        }
+      }
+  
+      .cta-content {
+  
+        h2 {
+          font-size: 2rem;
+          line-height: 2.3rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .cta-container {
+  
+      .cta-heading {
+  
+        h4 {
+          font-size: 1.3rem;
+          line-height: 2rem;
+        }
+      }
+  
+      .cta-content {
+  
+        h2 {
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
       }
     }
   }
