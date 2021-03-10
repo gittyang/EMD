@@ -34,7 +34,7 @@
     }
   }
 
-  @media screen and (max-width: 992px)  {
+  @media screen and (max-width: 992px) {
 
     .hero-container {
   
@@ -51,7 +51,7 @@
     }
   }
 
-  @media screen and (max-width: 768px)  {
+  @media screen and (max-width: 768px) {
 
     .hero-container {
   
@@ -68,7 +68,7 @@
     }
   }
 
-  @media screen and (max-width: 576px)  {
+  @media screen and (max-width: 576px) {
 
     .hero-container {
   
@@ -85,7 +85,7 @@
     }
   }
 
-  @media screen and (max-width: 480px)  {
+  @media screen and (max-width: 480px) {
 
     .hero-container {
   
@@ -102,7 +102,7 @@
     }
   }
 
-  @media screen and (max-width: 414px)  {
+  @media screen and (max-width: 414px) {
 
     .hero-container {
   
@@ -119,7 +119,7 @@
     }
   }
 
-  @media screen and (max-width: 360px)  {
+  @media screen and (max-width: 360px) {
 
     .hero-container {
   
@@ -144,7 +144,7 @@
 // Consultation Section
 
 .consultation {
-  padding: 8rem;
+  padding: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,14 +170,176 @@
     }
 
     .consult-button {
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
 
       i {
         margin-left: 1rem;
       }
     }
   }
+
+  @media screen and (max-width: 992px) {
+    padding: 4rem;
+
+    .consult-container {
+
+      .consult-title {
+
+        h2 {
+          font-size: 3.5rem;
+          line-height: 4rem;
+
+          #consult-span {
+            font-size: 3.5rem;
+          }
+        }
+  
+      }
+    
+      .consult-content {
+        margin: 2rem 0 2.5rem 0;
+    
+        h5 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+
+    .consult-container {
+
+      .consult-title {
+
+        h2 {
+          font-size: 2.7rem;
+          line-height: 3.5rem;
+
+          #consult-span {
+            font-size: 2.7rem;
+          }
+        }
+      }
+    
+      .consult-content {
+        margin: 1.5rem 0 2rem 0;
+    
+        h5 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 1.5rem;
+
+    .consult-container {
+      text-align: center;
+
+      .consult-title {
+
+        h2 {
+          font-size: 2.2rem;
+          line-height: 2.8rem;
+
+          #consult-span {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    
+      .consult-content {
+        margin: 1rem 0 1.5rem 0;
+    
+        h5 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
+
+    .consult-container {
+
+      .consult-title {
+
+        h2 {
+          font-size: 1.9rem;
+          line-height: 2.5rem;
+
+          #consult-span {
+            font-size: 1.9rem;
+          }
+        }
+      }
+    
+      .consult-content {
+        margin: 1rem 0 1.5rem 0;
+    
+        h5 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+
+    .consult-container {
+
+      .consult-title {
+
+        h2 {
+          font-size: 1.7rem;
+          line-height: 2.2rem;
+
+          #consult-span {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    
+      .consult-content {
+    
+        h5 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+
+    .consult-container {
+
+      .consult-title {
+
+        h2 {
+          font-size: 1.4rem;
+          line-height: 2.2rem;
+
+          #consult-span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    
+      .consult-content {
+    
+        h5 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
 } // End of Consultation Section
 
 

@@ -36,8 +36,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  line-height: 4.5rem;
-  margin-bottom: 2rem; }
+  line-height: 4.5rem; }
 
 h3 {
   font-size: 2.5rem; }
@@ -209,7 +208,7 @@ ul {
         font-size: 2rem; } }
 
 .consultation {
-  padding: 8rem;
+  padding: 6rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -222,11 +221,74 @@ ul {
     margin: 2.5rem 0 3rem 0; }
     .consultation .consult-container .consult-content h5 {
       font-weight: 400; }
-  .consultation .consult-container .consult-button {
-    display: flex;
-    align-items: center; }
-    .consultation .consult-container .consult-button i {
-      margin-left: 1rem; }
+  .consultation .consult-container .consult-button i {
+    margin-left: 1rem; }
+  @media screen and (max-width: 992px) {
+    .consultation {
+      padding: 4rem; }
+      .consultation .consult-container .consult-title h2 {
+        font-size: 3.5rem;
+        line-height: 4rem; }
+        .consultation .consult-container .consult-title h2 #consult-span {
+          font-size: 3.5rem; }
+      .consultation .consult-container .consult-content {
+        margin: 2rem 0 2.5rem 0; }
+        .consultation .consult-container .consult-content h5 {
+          font-size: 1.6rem; } }
+  @media screen and (max-width: 768px) {
+    .consultation {
+      padding: 2rem; }
+      .consultation .consult-container .consult-title h2 {
+        font-size: 2.7rem;
+        line-height: 3.5rem; }
+        .consultation .consult-container .consult-title h2 #consult-span {
+          font-size: 2.7rem; }
+      .consultation .consult-container .consult-content {
+        margin: 1.5rem 0 2rem 0; }
+        .consultation .consult-container .consult-content h5 {
+          font-size: 1.5rem; } }
+  @media screen and (max-width: 576px) {
+    .consultation {
+      padding: 1.5rem; }
+      .consultation .consult-container {
+        text-align: center; }
+        .consultation .consult-container .consult-title h2 {
+          font-size: 2.2rem;
+          line-height: 2.8rem; }
+          .consultation .consult-container .consult-title h2 #consult-span {
+            font-size: 2.2rem; }
+        .consultation .consult-container .consult-content {
+          margin: 1rem 0 1.5rem 0; }
+          .consultation .consult-container .consult-content h5 {
+            font-size: 1.4rem; } }
+  @media screen and (max-width: 480px) {
+    .consultation {
+      padding: 1rem; }
+      .consultation .consult-container .consult-title h2 {
+        font-size: 1.9rem;
+        line-height: 2.5rem; }
+        .consultation .consult-container .consult-title h2 #consult-span {
+          font-size: 1.9rem; }
+      .consultation .consult-container .consult-content {
+        margin: 1rem 0 1.5rem 0; }
+        .consultation .consult-container .consult-content h5 {
+          font-size: 1.3rem; } }
+  @media screen and (max-width: 414px) {
+    .consultation .consult-container .consult-title h2 {
+      font-size: 1.7rem;
+      line-height: 2.2rem; }
+      .consultation .consult-container .consult-title h2 #consult-span {
+        font-size: 1.7rem; }
+    .consultation .consult-container .consult-content h5 {
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 360px) {
+    .consultation .consult-container .consult-title h2 {
+      font-size: 1.4rem;
+      line-height: 2.2rem; }
+      .consultation .consult-container .consult-title h2 #consult-span {
+        font-size: 1.4rem; }
+    .consultation .consult-container .consult-content h5 {
+      font-size: 1.1rem; } }
 
 .services {
   display: flex;
